@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vsWallpaper-Effect"
+version = "1.0.0"
+description = "Wayland wallpaper app with real-time OpenGL effects"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyOpenGL", "PyOpenGL-accelerate"]
+
+[project.scripts]
+vswallpaper-effect = "vswallpaper_effect.main:main"
+
+[tool.setuptools.packages.find]
+include = ["vswallpaper_effect*"]
